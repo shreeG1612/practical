@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    font-size: 20px;
+    /* background: linear-gradient(to bottom #000000 , #000000); */
+    background-color: rgba(255, 255, 255, 0.884);
+}
+section .color{
+    position: absolute;
+    filter: blur(100px);
+}
+section .color:nth-child(1){
+    top: -350px;
+    width: 800px;
+    height: 600px;
+    background: #ff359b;
+    animation: aone 15s  infinite;
+}
+@keyframes aone{
+    0%,100%{
+        left: 0px;
+        background: #ff359a9a;
+    }
+    50%{
+        left: 700px;
+        background: #ff0000a6;
+    }
+}
+section .color:nth-child(2){
+    bottom: -150px;
+    left: 100px;
+    width: 600px;
+    height: 600px;
+    background: #fffd87;
+    animation: atwo 15s  infinite;
+}
+@keyframes atwo{
+    0%,100%{
+        bottom: -150px;
+        background: #ffd90096;
+    }
+    50%{
+        bottom: 150px;
+        background: #00ff55;
+    }
+}
+section .color:nth-child(3){
+    bottom: 50px;
+    right: 100px;
+    width: 600px;
+    height: 600px;
+    background: #00d2ff;
+    animation: athree 15s  infinite ;
+}
+@keyframes athree{
+    0%,100%{
+        bottom: 50px;
+        background: #00d2ff;
+        
+    }
+    50%{
+        bottom: -200px; 
+        background: #bf00ffad;
+        
+    }
+}
+.list{
+    max-width: 700px;
+    width: 50vw;
+    background: rgb(255, 255, 255);
+    padding: 25px 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0,0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul{
+    font-family: 'Abril Fatface', cursive;
+}
+.one, .two li{
+    margin-left: 30px;
+    font-family: 'Roboto Slab', serif;
+}
+.three li{
+    margin-left: 40px;
+    font-family: 'Cormorant Garamond', serif;
+}
+.two{
+    list-style: url();
+}
