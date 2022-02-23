@@ -1,0 +1,69 @@
+*{margin: 0;
+    padding: 0;}
+    body{
+        display: flex;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.925);
+        align-items: center;
+        height: 100vh;
+    }
+    th.THone{
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    th{
+        border: 1px solid #ffffff ;
+        text-align: center;
+        font-size: 30px; 
+    }
+    td{
+        border: 1px solid #ffffff ;
+        text-align: center;
+        font-size: 20px;
+    }
+    table{
+        height: 50vh;
+        width: 50vw;
+        color: antiquewhite;
+    }
+    table td.two:hover{
+        background-image: linear-gradient(45deg, #B7DEED, #5dd3fd, #21B4E2, #B7DEED);
+        color: black;
+        animation: magic 1s;
+    }
+    .pro{
+        padding-bottom: 30px;
+        padding-left: 260px;
+        font-size: 50px;
+        width: 0ch;
+        overflow: hidden;
+        white-space: nowrap;
+        /* animation: text 6s 100; */
+        background-color: red;
+        background-image: linear-gradient(45deg, #f3ec78, #af4261);
+        background-size: 100%;
+        background-repeat: repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        background-clip: text;
+        -moz-text-fill-color: transparent;
+     }
+    @keyframes text{
+        0%{
+             width: 0ch; 
+        }
+        50%{
+             width: 20ch;  
+        }
+    }
+    @keyframes magic{
+        0%{
+            /* font-size: 20px; */
+            font-weight: bold;
+        }
+        100%{
+            /* font-size: 15px; */
+            font-weight: bold;
+        }
+    }
+    
